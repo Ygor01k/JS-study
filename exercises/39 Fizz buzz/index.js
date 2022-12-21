@@ -1,28 +1,48 @@
 //Exercise 27.12 Swapping variables
 
 // my code
-let a = 'red';
-let b = 'blue';
 
-// Simple form
- let c = b;
- b = a;
- a = c;
+console.log(fizzBuzz2(true))
 
+// Method 1
+function fizzBuzz(input){
+    if (typeof input !== 'number') 
+        return 'Not a Number'
+    if(input % 5 === 0 && input % 3 === 0)
+        return "FizzBuzz"
+    if(input % 3 === 0)
+        return "Fizz"
+    if(input % 5 === 0)
+        return "Buzz"
+    return input;
+}
 
-console.log(a);
-console.log(b);
-
+// Method 2
+function fizzBuzz2(input){
+    let resposta = '';
+    if (typeof input === 'number'){ 
+        if(input % 3 === 0)
+            resposta = "Fizz";
+        if(input % 5 === 0)
+            resposta += "Buzz";
+        else if(input % 3 !== 0)
+            resposta = input;
+    }
+    else return 'Not a Number';
+    return resposta;
+}
 
 // Instructor's code
 
-// let a = 'red';
-// let b = 'blue';
-
-//  let c = a;
-//  a = b;
-//  b = c;
-
-
-// console.log(a);
-// console.log(b);
+// Method 1
+function fizzBuzzInstructor(input){
+    if (typeof input !== 'number') 
+        return NaN
+    if(input % 5 === 0 && input % 3 === 0)
+        return "FizzBuzz"
+    if(input % 3 === 0)
+        return "Fizz"
+    if(input % 5 === 0)
+        return "Buzz"
+    return input;
+}

@@ -1,28 +1,19 @@
-//Exercise 27.12 Swapping variables
+//Exercise 38 Landscape or Portrait
 
 // my code
-let a = 'red';
-let b = 'blue';
+console.log(isLandscape(50,35));
 
-// Simple form
- let c = b;
- b = a;
- a = c;
-
-
-console.log(a);
-console.log(b);
+// Method 1
+function isLandscape(width, height){
+    return (width > height) ? true : false;
+}
 
 
 // Instructor's code
 
-// let a = 'red';
-// let b = 'blue';
+console.log(isLandscape(300,600));
 
-//  let c = a;
-//  a = b;
-//  b = c;
-
-
-// console.log(a);
-// console.log(b);
+// Method 1
+function isLandscape(width, height){
+    return (width > height);
+}
