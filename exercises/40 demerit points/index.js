@@ -1,7 +1,8 @@
 //Exercise 40 Demerit Points
 
 // my code
-console.log(checkspeed(120))
+console.log(checkspeed(120));
+checkspeedInstructor(120);
 
 // Method 1
 function checkspeed(speed){
@@ -18,16 +19,15 @@ function checkspeed(speed){
     if(point <= 0)status = 'ok';     
     else if(point >= suspendPoint)
         status = 'License Suspended';
-    else status = 'points: ' + point;    
+    else status = 'Points: '+ point;    
     
     return status;    
 }
 
 // Instructor's code
 
-function checkspeed(speed){
+function checkspeedInstructor(speed){
     const speedLimit = 70;
-    const suspendPoint = 12;
     const kmPerPoint = 5;
     
     if(speed<speedLimit + kmPerPoint){

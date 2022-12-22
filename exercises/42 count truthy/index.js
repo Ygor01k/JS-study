@@ -1,28 +1,26 @@
-//Exercise 27.12 Swapping variables
+//Exercise 42 count truthy
 
 // my code
-let a = 'red';
-let b = 'blue';
+let truthy = [0,1,'','e',null,2];
+console.log(countTruthy(truthy));
 
-// Simple form
- let c = b;
- b = a;
- a = c;
-
-
-console.log(a);
-console.log(b);
-
+// Method 1
+function countTruthy(array){
+    let counter = 0
+    for(let truth of array){
+        if(truth)
+        counter++;
+    }
+    return counter;
+}
 
 // Instructor's code
 
-// let a = 'red';
-// let b = 'blue';
-
-//  let c = a;
-//  a = b;
-//  b = c;
-
-
-// console.log(a);
-// console.log(b);
+function countTruthyInstructor(array){
+    let counter = 0
+    for(let value of array){
+        if(value)
+        counter++;
+    }
+    return counter;
+}

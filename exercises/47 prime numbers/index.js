@@ -1,4 +1,4 @@
-//Exercise 27.12 Swapping variables
+//Exercise 47 prime numbers
 
 // my code
 let a = 'red';

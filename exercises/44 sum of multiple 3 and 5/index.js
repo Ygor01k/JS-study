@@ -1,28 +1,29 @@
-//Exercise 27.12 Swapping variables
+//Exercise 44 sum of multiple 3 and 5
 
 // my code
-let a = 'red';
-let b = 'blue';
+console.log(sum(5));
+// Method 1
 
-// Simple form
- let c = b;
- b = a;
- a = c;
+function sum(limit){
+    let result = 0
 
-
-console.log(a);
-console.log(b);
+    for(i = 0; i <= limit; i++)
+        if(i % 3 === 0 || i % 5 === 0)
+            result += i;
+    
+    return result;
+}
 
 
 // Instructor's code
 
-// let a = 'red';
-// let b = 'blue';
+function sum(limit){
+    let sum = 0
 
-//  let c = a;
-//  a = b;
-//  b = c;
+    for(i = 0; i <= limit; i++)
+        if(i % 3 === 0 || i % 5 === 0)
+            sum += i;
+    
+    return sum;
+}
 
-
-// console.log(a);
-// console.log(b);

@@ -1,28 +1,26 @@
-//Exercise 27.12 Swapping variables
+//Exercise 41 Even and Odd Numbers
 
 // my code
-let a = 'red';
-let b = 'blue';
+showNumbers(10)
+showNumbersInstructor(11)
+// Method 1
+function showNumbers(limit){
+    for(i = 0; i <= limit; i++){
+        if(i % 2 === 0)
+            console.log(i, 'EVEN');
+        else
+        console.log(i,'ODD');
+    }
 
-// Simple form
- let c = b;
- b = a;
- a = c;
-
-
-console.log(a);
-console.log(b);
+}
 
 
 // Instructor's code
 
-// let a = 'red';
-// let b = 'blue';
+function showNumbersInstructor(limit){
+    for(i = 0; i <= limit; i++){
+       const message = (i % 2 === 0) ? 'EVEN' : 'ODD';
+       console.log(i,message);
+    }
 
-//  let c = a;
-//  a = b;
-//  b = c;
-
-
-// console.log(a);
-// console.log(b);
+}

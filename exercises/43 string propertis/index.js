@@ -1,28 +1,31 @@
-//Exercise 27.12 Swapping variables
+//Exercise 43 string propertis
 
 // my code
-let a = 'red';
-let b = 'blue';
 
-// Simple form
- let c = b;
- b = a;
- a = c;
+const person = {
+    name: 'ygor',
+    age: 20,
+    height: 160,
+    likes: 'car'
+}
 
+showProperties(person)
 
-console.log(a);
-console.log(b);
+// Method 1
+function showProperties(obj){
+    for (const key in obj) {
+        if (typeof(obj[key]) === 'string' ) {
+            console.log(obj[key]);
+        }
+    }
+}    
 
 
 // Instructor's code
 
-// let a = 'red';
-// let b = 'blue';
-
-//  let c = a;
-//  a = b;
-//  b = c;
-
-
-// console.log(a);
-// console.log(b);
+function showPropertiesInstructor(obj){
+    for (const key in obj) 
+        if (typeof(obj[key]) === 'string' ) 
+            console.log(key,obj[key]);
+        
+}    
