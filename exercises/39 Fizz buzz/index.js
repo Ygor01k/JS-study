@@ -1,4 +1,4 @@
-//Exercise 27.12 Swapping variables
+//Exercise 39 FizzBuzz
 
 // my code
 
